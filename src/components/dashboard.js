@@ -55,7 +55,7 @@ const Dashboard = () => {
     }
   ]
   return (
-    <div className="py-6 bg-[#e7e7e7] px-8">
+    <div className="py-6 bg-[#e7e7e7] flex flex-col justify-around px-8">
       <p className='text-lg mb-5 font-bold'>Company Metrics</p>
       <div className='flex flex-wrap justify-around gap-y-4'>
         {cards.map((card) => (
@@ -65,7 +65,7 @@ const Dashboard = () => {
           </div>
         ))}
       </div>
-      <div className='my-16 flex gap-x-4'>
+      <div className='my-16 flex-wrap flex justify-around'>
         <div className='flex flex-col gap-y-5'>
           <p className='text-lg mb-5 font-bold'>Revenue By Job Location</p>
           <div className='bg-white p-4 border rounded shadow'>
