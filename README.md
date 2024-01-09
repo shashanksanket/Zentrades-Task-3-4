@@ -1,70 +1,138 @@
-# Getting Started with Create React App
+# SmartServ Login Dashboard Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React application designed to implement a login dashboard with specified functionality. The application includes a login page with email validation and password complexity requirements. Upon successful login, users are redirected to a dashboard page that displays actual components like charts and dropdowns.
 
-## Available Scripts
+## Problem Statement
 
-In the project directory, you can run:
+### Login Page
 
-### `npm start`
+#### Features:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. The login page should look like the provided image: [login_page.png](path/to/login_page.png).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. The username field should only accept an email format. The validation should happen through JavaScript.
 
-### `npm test`
+3. The password field must be a masked field and should not reveal what's being entered.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. The password field should not accept any special character other than '@' and must contain an uppercase letter and a number.
 
-### `npm run build`
+5. Entering the password as 'SmartServTest@123' should redirect the user to a dashboard page. Any other password should throw an error.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+6. Clicking on the "Forgot your password" link should open any email client to send an email to support@smartserv.io for resetting the password.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Deliverables:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Hosting URL on Heroku / Github pages.
+- Github repository link to your solution.
+- Time taken to complete this.
 
-### `npm run eject`
+### Dashboard Page
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### Features:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. The dashboard page should look like the provided image: [dashboard2.png](path/to/dashboard2.png).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. All components on the dashboard page must be actual components like charts and dropdowns. No image use is allowed.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### Deliverables:
 
-## Learn More
+- Hosting URL on Heroku / Github pages.
+- Github repository link to your solution.
+- Time taken to complete this.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Live Link:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Getting Started
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Follow these steps to set up and run the application:
 
-### Analyzing the Bundle Size
+### Prerequisites
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Make sure you have Node.js and npm installed on your machine.
 
-### Making a Progressive Web App
+### Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. Clone the repository:
 
-### Advanced Configuration
+   ```bash
+   git clone https://github.com/shashanksanket/Zentrades-Task-3-4.git
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+2. Change into the project directory:
 
-### Deployment
+   ```bash
+   cd task3
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+3. Install dependencies:
 
-### `npm run build` fails to minify
+   ```bash
+   npm install
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Usage
+
+1. Run the application:
+
+   ```bash
+   npm start
+   ```
+
+2. Open your web browser and navigate to [http://localhost:3000](http://localhost:3000).
+
+3. Follow the on-screen instructions to use the login page and explore the dashboard.
+
+## Components
+
+### Login
+
+The `Login` component is responsible for rendering the login page with specified functionality.
+
+### Dashboard
+
+The `Dashboard` component displays actual components like charts and dropdowns, following the provided design.
+
+### ApexChart
+
+The `ApexChart` component is a reusable component for rendering progress bar graphs using ApexCharts.
+
+## Folder Structure
+
+```
+|-- public
+|-- src
+    |-- assets
+        |-- logo.png
+    |-- components
+        |-- login.js
+        |-- dashboard.js
+        |-- progressBarGraph.js
+    |-- App.css
+    |-- App.js
+    |-- index.css
+    |-- index.js
+|-- .gitignore
+|-- package.json
+|-- README.md
+```
+
+## Dependencies
+
+- [React](https://reactjs.org/)
+- [React Router](https://reactrouter.com/)
+- [ApexCharts](https://apexcharts.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Thanks to [ApexCharts](https://apexcharts.com/) for providing a powerful charting library.
+- Built with [React](https://reactjs.org/) and [Tailwind CSS](https://tailwindcss.com/).
+
+---
+
+*Note: Update the deployment section with the specific steps for deploying on the chosen platform.*
