@@ -41,7 +41,7 @@ This is a React application designed to implement a login dashboard with specifi
 - Time taken to complete this.
 
 ### Live Link:
-
+https://shashanksanket.github.io/Zentrades-Task-3n4/
 
 ## Getting Started
 
@@ -134,5 +134,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Built with [React](https://reactjs.org/) and [Tailwind CSS](https://tailwindcss.com/).
 
 ---
+##Images
+<img width="1440" alt="Screenshot 2024-01-10 at 4 13 36 AM" src="https://github.com/shashanksanket/Zentrades-Task-3n4/assets/40575030/ba5e91ce-c43b-496d-bdac-4c796ac842b4">
 
-*Note: Update the deployment section with the specific steps for deploying on the chosen platform.*
+<img width="1440" alt="Screenshot 2024-01-10 at 4 13 58 AM" src="https://github.com/shashanksanket/Zentrades-Task-3n4/assets/40575030/c707f2a6-7654-422a-b422-e10b23762a46">
